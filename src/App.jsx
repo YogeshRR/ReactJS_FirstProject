@@ -5,6 +5,9 @@ import { CORE_CONCEPTS } from './data.js';
 import TabBarButton from './components/TabBarButton.jsx';
 
 function App() {
+  function handleClick() {
+    console.log("Hello World - selected");
+  }
   return (
     <div>
       <Header />
@@ -31,10 +34,10 @@ function App() {
         <section id='examples'>
           <h2>Examples</h2>
           <menu>
-            <TabBarButton>Component</TabBarButton>
-            <TabBarButton>JSX</TabBarButton>
-            <TabBarButton>Props</TabBarButton>
-            <TabBarButton>State</TabBarButton>
+            <TabBarButton onSelect={handleClick}>Component</TabBarButton>
+            <TabBarButton onSelect={handleClick}>JSX</TabBarButton>
+            <TabBarButton onSelect={handleClick}>Props</TabBarButton>
+            <TabBarButton onSelect={handleClick}>State</TabBarButton>
           </menu>
 
         </section>
