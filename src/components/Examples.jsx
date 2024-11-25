@@ -29,7 +29,7 @@ import Tabs from "./Tabs";
 
         <Section title={'Example'} id='examples'>
          
-          <Tabs ButtonsContainer="menu" buttons={<>
+          <Tabs buttons={<>
             <TabBarButton isSelect={selectedTopic === 'components'} onClick={() => handleClick('components')}>Component</TabBarButton>
             <TabBarButton isSelect={selectedTopic === 'jsx'} onClick={() => handleClick('jsx')}>JSX</TabBarButton>
             <TabBarButton isSelect={selectedTopic === 'props'} onClick={() => handleClick('props')}>Props</TabBarButton>
